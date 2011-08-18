@@ -1,0 +1,25 @@
+#progressIndicator {
+
+  width: 325px; 
+  background: #eee;
+  overflow: hidden;
+
+  #attachment_fileName{}
+  #attachment_fileSize{}
+  #attachment_fileType{}
+  
+  #attachment_fileBar {
+    color: white;
+    display: block;
+    height: 25px;
+    width: 0px;
+    background: #264799;
+    text-align: right;
+    border-radius: 5px;
+  }
+  #attachment_fileNumber{display: inline;}
+  #attachment_fileTransferSpeedInfo{display: inline;}
+  #attachment_fileTimeRemainingInfo{display: inline;}
+  #attachment_fileBytesInfo{display: inline;}
+  #attachment_fileResponse{display: inline;}
+}
