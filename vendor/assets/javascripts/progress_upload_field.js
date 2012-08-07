@@ -61,7 +61,7 @@ function updateTransferSpeed() {
   else
     speed = bytesDiff.toString() + 'Bps';
   document.getElementById(div_id+'TransferSpeedInfo').innerHTML = speed;
-  document.getElementById(div_id+'TimeRemainingInfo').innerHTML = '| ' + secondsToString(secondsRemaining);        
+  document.getElementById(div_id+'TimeRemainingInfo').innerHTML = ' | ' + secondsToString(secondsRemaining);        
 }
 
 function secondsToString(seconds) {        
@@ -86,7 +86,7 @@ function uploadProgress(evt) {
 
     document.getElementById(div_id+'Number').innerHTML = percentComplete.toString() + '%';
     document.getElementById(div_id+'Bar').style.width = percentComplete.toString() + '%';
-    document.getElementById(div_id+'BytesInfo').innerHTML = bytesTransfered;
+    document.getElementById(div_id+'BytesInfo').innerHTML = ' | ' + bytesTransfered;
     if (percentComplete == 100) {
       $('#'+div_id+'Info').hide();
       var uploadResponse = document.getElementById(div_id+'Response');
